@@ -19,9 +19,9 @@ def draw?(board)
   if set== WIN_COMBINATIONS[0]
     return false
   end
-  Ocount = board.count("O")
-  Xcount = board.count("X")
-  if Ocount && Xcount == 4
+  countO = board.count("O")
+  countX = board.count("X")
+  if countO && countX == 4
     return true
   end
 
