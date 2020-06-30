@@ -21,7 +21,7 @@ def draw?(board)
   end
   countO = board.count("O")
   countX = board.count("X")
-  if countO && countX == 4
+  if countO==4 && countX == 4
     return true
   end
 
