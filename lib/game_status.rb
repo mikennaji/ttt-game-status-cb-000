@@ -18,7 +18,7 @@ def draw?(board)
   if set.nil?
     return true
   end
-  
+
   full?(board)
   set = won?(board)
   if set== WIN_COMBINATIONS[0]
