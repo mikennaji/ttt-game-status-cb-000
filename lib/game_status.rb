@@ -61,9 +61,7 @@ def over?(board)
   draw?(board)
   won?(board)
   set = won?(board)
-  if set.nil?
-    return true
-  end
+
 
 end
 
