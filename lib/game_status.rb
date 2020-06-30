@@ -19,7 +19,7 @@ def draw?(board)
   if set== WIN_COMBINATIONS[0]
     return false
   end
-  
+
 
 
 
@@ -60,6 +60,10 @@ end
 def over?(board)
   draw?(board)
   won?(board)
+  set = won?(board)
+  if set.nil?
+    return true
+  end
 
 end
 
