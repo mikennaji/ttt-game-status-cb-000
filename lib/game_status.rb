@@ -64,6 +64,11 @@ end
 def over?(board)
   draw?(board)
   won?(board)
+  countO = board.count("O")
+  countX = board.count("X")
+  if countO==4 && countX == 4
+    return true
+  end
 end
 
 def winner(board)
