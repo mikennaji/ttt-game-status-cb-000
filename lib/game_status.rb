@@ -14,6 +14,11 @@ def full?(board)
 end
 
 def draw?(board)
+  set = won?(board)
+  if set.nil?
+    return nil
+  end
+  
   full?(board)
   set = won?(board)
   if set== WIN_COMBINATIONS[0]
