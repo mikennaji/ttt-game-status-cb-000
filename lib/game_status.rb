@@ -19,11 +19,7 @@ def draw?(board)
   if set== WIN_COMBINATIONS[0]
     return false
   end
-  countO = board.count("O")
-  countX = board.count("X")
-  if countO==4 && countX == 4
-    return true
-  end
+  
 
 
 
@@ -64,7 +60,7 @@ end
 def over?(board)
   draw?(board)
   won?(board)
-  
+
 end
 
 def winner(board)
