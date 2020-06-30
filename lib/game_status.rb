@@ -61,7 +61,7 @@ def over?(board)
   draw?(board)
   won?(board)
   set = won?(board)
-
+  puts set
 
 end
 
