@@ -16,7 +16,7 @@ end
 def draw?(board)
   set = won?(board)
   if set.nil?
-    return nil
+    return true
   end
   
   full?(board)
