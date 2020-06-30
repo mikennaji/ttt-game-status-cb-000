@@ -64,7 +64,7 @@ end
 
 def over?(board)
   set = won?(board)
-  if set.nil?
+  if set.nil && board.size ==9?
     return true
   end
   draw?(board)
