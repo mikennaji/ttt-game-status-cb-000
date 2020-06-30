@@ -14,11 +14,17 @@ def full?(board)
 end
 
 def draw?(board)
+  set = won?(board)
+  if set.nil?
+    return true
+  end
+
   full?(board)
   set = won?(board)
   if set== WIN_COMBINATIONS[0]
     return false
   end
+
 
 
 
@@ -57,8 +63,15 @@ def won?(board)
 end
 
 def over?(board)
+  set = won?(board)
+  if set.nil? && full?(board)
+    return true
+  end
   draw?(board)
   won?(board)
+
+
+
 end
 
 def winner(board)
